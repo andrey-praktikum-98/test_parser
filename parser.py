@@ -49,14 +49,13 @@ def catalog_page(main_catalog: str):
         catalog = requests.get(f"{DOMAIN}{main_catalog}")
         soup_catalog = BeautifulSoup(catalog.text, 'html.parser')
     except Exception as err:
-            logging.debug(f"Произошла ошибка: {err}")
+        logging.debug(f"Произошла ошибка: {err}")
     for items in soup_catalog.find_all("a", {"class": "item-depth-1"}):
         try:
             sub_category = requests.get(f"{DOMAIN}{items.get('href')}")
             soup_sub_category = BeautifulSoup(sub_category.text, 'html.parser')
         except Exception as err:
             logging.debug(f"Произошла ошибка: {err}")
-        # logging.debug(items.get('href'))
         links_url[items.get('title')] = {}
         id_parent_cat += 1
         category[id_parent_cat] = {
@@ -82,9 +81,6 @@ def get_sub_category(soup_sub_category, links_url, items,
     category_product = {}
     for items_sub_cat in (soup_sub_category.find_all(
             "a", {"class": "item-depth-1"})):
-        # logging.debug(items_sub_cat.get('title'))
-        # logging.debug(items_sub_cat.get('href'))
-
         links_url[items.get('title')][items_sub_cat.get('title')] = \
             items_sub_cat.get('href')
         try:
@@ -110,20 +106,17 @@ def get_sub_category(soup_sub_category, links_url, items,
         'href'], category_child)
 
 
-
 def products_page(soup_products, category_product, count):
     """Получение продуктов"""
     products_lop = soup_products.select(".catalog-content-info .name")
     for key, link_product in enumerate(products_lop):
-        # logging.debug(link_product.get('href'))
         try:
-            product_single = requests.get(f"{DOMAIN}{link_product.get('href')}")
+            product_single = requests.get(
+                f"{DOMAIN}{link_product.get('href')}")
             soup_product = BeautifulSoup(product_single.text, 'html.parser')
         except Exception as err:
             logging.debug(f"Произошла ошибка: {err}")
         text_title = soup_product.h1
-        # logging.info(text_title.text)
-        # logging.info(soup_product.img['src'])
         count_prod = 0
         for val_product in soup_product.select('.tg-yw4l22 b'):
             logging.debug(val_product.text)
@@ -131,8 +124,9 @@ def products_page(soup_products, category_product, count):
 
             category_product[count_prod] = {
                 'id_cat_child': count,
+                'text_title': text_title,
                 'text': val_product.text,
-            }   
+            }
 
         time.sleep(0.5)
 
@@ -148,8 +142,6 @@ def paginate(soup_products):
         logging.debug(prod_paginate.get('href'))
         product_single = requests.get(f"{DOMAIN}{prod_paginate.get('href')}")
         soup_product = BeautifulSoup(product_single.text, 'html.parser')
-        text_title = soup_product.h1
-        # logging.info(text_title.text)
         logging.info(soup_product.select("td"))
 
         time.sleep(0.5)
