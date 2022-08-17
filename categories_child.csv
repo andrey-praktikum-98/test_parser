@@ -1,0 +1,317 @@
+id_category,id_category_child,title,href
+1,1,Корм сухой,/catalog/tovary-i-korma-dlya-sobak/korm-sukhoy/
+1,2,Корм влажный,/catalog/tovary-i-korma-dlya-sobak/korm-vlazhnyy/
+1,3,Корм лечебный,/catalog/tovary-i-korma-dlya-sobak/korm-lechebnyy/
+1,4,Лакомства,/catalog/tovary-i-korma-dlya-sobak/lakomstva/
+1,5,Аксессуары,/catalog/tovary-i-korma-dlya-sobak/aksessuary/
+1,6,Витамины,/catalog/tovary-i-korma-dlya-sobak/vitaminy_/
+1,7,Игрушки,/catalog/tovary-i-korma-dlya-sobak/igrushki/
+1,8,Косточки,/catalog/tovary-i-korma-dlya-sobak/kostochki/
+1,9,Предметы гигиены,/catalog/tovary-i-korma-dlya-sobak/predmety-gigieny/
+1,10,Предметы по уходу,/catalog/tovary-i-korma-dlya-sobak/predmety-po-ukhodu/
+1,11,Средства от паразитов,/catalog/tovary-i-korma-dlya-sobak/sredstva-ot-parazitov/
+1,12,Средства по уходу,/catalog/tovary-i-korma-dlya-sobak/sredstva-po-ukhodu/
+id_category,id_category_child,title,href
+2,1,Корм сухой,/catalog/tovary-i-korma-dlya-koshek/korm-sukhoy/
+2,2,Корм влажный,/catalog/tovary-i-korma-dlya-koshek/korm-vlazhnyy/
+2,3,Корм лечебный,/catalog/tovary-i-korma-dlya-koshek/korm-lechebnyy/
+2,4,Наполнитель,/catalog/tovary-i-korma-dlya-koshek/napolnitel/
+2,5,Лакомства,/catalog/tovary-i-korma-dlya-koshek/lakomstva/
+2,6,Автокормушки,/catalog/tovary-i-korma-dlya-koshek/avtokormushki/
+2,7,Аксессуары,/catalog/tovary-i-korma-dlya-koshek/aksessuary/
+2,8,Витамины,/catalog/tovary-i-korma-dlya-koshek/vitaminy/
+2,9,Домики,/catalog/tovary-i-korma-dlya-koshek/domiki/
+2,10,Игрушки,/catalog/tovary-i-korma-dlya-koshek/igrushki/
+2,11,Когтеточки,/catalog/tovary-i-korma-dlya-koshek/kogtetochki/
+2,12,Лежанки,/catalog/tovary-i-korma-dlya-koshek/lezhanki/
+2,13,Миски,/catalog/tovary-i-korma-dlya-koshek/miski/
+2,14,Переноски,/catalog/tovary-i-korma-dlya-koshek/perenoski/
+2,15,Предметы по уходу,/catalog/tovary-i-korma-dlya-koshek/predmety-po-ukhodu/
+2,16,Средства от паразитов,/catalog/tovary-i-korma-dlya-koshek/sredstva-ot-parazitov/
+2,17,Средства по уходу,/catalog/tovary-i-korma-dlya-koshek/sredstva-po-ukhodu/
+2,18,Тонель,/catalog/tovary-i-korma-dlya-koshek/tonel/
+2,19,"Туалеты, совки",/catalog/tovary-i-korma-dlya-koshek/tualety-sovki/
+2,20,Шлейки,/catalog/tovary-i-korma-dlya-koshek/shleyki/
+id_category,id_category_child,title,href
+3,1,Подвески,/catalog/tovary-i-korma-dlya-ptits/podveski/
+3,2,Витамины,/catalog/tovary-i-korma-dlya-ptits/vitaminy/
+3,3,Гнездo,/catalog/tovary-i-korma-dlya-ptits/gnezdo/
+3,4,Жердочки,/catalog/tovary-i-korma-dlya-ptits/zherdochki/
+3,5,Зеркала,/catalog/tovary-i-korma-dlya-ptits/zerkala/
+3,6,Игрушки,/catalog/tovary-i-korma-dlya-ptits/igrushki/
+3,7,Качели,/catalog/tovary-i-korma-dlya-ptits/kacheli/
+3,8,Клетки,/catalog/tovary-i-korma-dlya-ptits/kletki/
+3,9,Корм,/catalog/tovary-i-korma-dlya-ptits/korm/
+3,10,Кормушки,/catalog/tovary-i-korma-dlya-ptits/kormushki/
+3,11,Купалки,/catalog/tovary-i-korma-dlya-ptits/kupalki/
+3,12,Лакомства,/catalog/tovary-i-korma-dlya-ptits/lakomstva/
+3,13,Лестницы,/catalog/tovary-i-korma-dlya-ptits/lestnitsy/
+3,14,Переноски,/catalog/tovary-i-korma-dlya-ptits/perenoski/
+3,15,"Песок,камни",/catalog/tovary-i-korma-dlya-ptits/pesok-kamni/
+3,16,Подкормки,/catalog/tovary-i-korma-dlya-ptits/podkormki/
+3,17,Поилки,/catalog/tovary-i-korma-dlya-ptits/poilki/
+2,18,Тонель,/catalog/tovary-i-korma-dlya-koshek/tonel/
+2,19,"Туалеты, совки",/catalog/tovary-i-korma-dlya-koshek/tualety-sovki/
+2,20,Шлейки,/catalog/tovary-i-korma-dlya-koshek/shleyki/
+id_category,id_category_child,title,href
+4,1,Витамины,/catalog/tovary-i-korma-dlya-gryzunov/vitaminy/
+4,2,Когтерез,/catalog/tovary-i-korma-dlya-gryzunov/kogterez/
+4,3,"Гамак,Тоннель",/catalog/tovary-i-korma-dlya-gryzunov/gamak-tonnel/
+4,4,Домики,/catalog/tovary-i-korma-dlya-gryzunov/domiki/
+4,5,Игрушки,/catalog/tovary-i-korma-dlya-gryzunov/igrushki/
+4,6,Расчестки,/catalog/tovary-i-korma-dlya-gryzunov/raschestki/
+4,7,Клетки,/catalog/tovary-i-korma-dlya-gryzunov/kletki/
+4,8,Колеса,/catalog/tovary-i-korma-dlya-gryzunov/kolesa/
+4,9,Корм,/catalog/tovary-i-korma-dlya-gryzunov/korm/
+4,10,Кормушки,/catalog/tovary-i-korma-dlya-gryzunov/kormushki/
+4,11,Купалки,/catalog/tovary-i-korma-dlya-gryzunov/kupalki/
+4,12,Лакомства,/catalog/tovary-i-korma-dlya-gryzunov/lakomstva_/
+4,13,Миски,/catalog/tovary-i-korma-dlya-gryzunov/miski/
+4,14,Наполнители,/catalog/tovary-i-korma-dlya-gryzunov/napolniteli/
+4,15,Переноски,/catalog/tovary-i-korma-dlya-gryzunov/perenoski/
+4,16,Подкормки,/catalog/tovary-i-korma-dlya-gryzunov/podkormki_/
+4,17,Поилки,/catalog/tovary-i-korma-dlya-gryzunov/poilki/
+4,18,Средства по уходу,/catalog/tovary-i-korma-dlya-gryzunov/sredstva-po-ukhodu/
+4,19,Туалет,/catalog/tovary-i-korma-dlya-gryzunov/tualet/
+4,20,Шлейки,/catalog/tovary-i-korma-dlya-gryzunov/shleyki/
+id_category,id_category_child,title,href
+5,1,Аксессуары,/catalog/tovary-i-korma-dlya-ryb/aksessuary/
+5,2,Корм Sera,/catalog/tovary-i-korma-dlya-ryb/korm-sera/
+5,3,Корм Tetra,/catalog/tovary-i-korma-dlya-ryb/korm-tetra/
+5,4,Корма разные,/catalog/tovary-i-korma-dlya-ryb/korma-raznye/
+5,5,Оборудование,/catalog/tovary-i-korma-dlya-ryb/oborudovanie/
+5,6,Уход за водой,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-vodoy/
+5,7,Уход за растениями,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rasteniyami/
+5,8,Уход за рыбами,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rybami/
+4,9,Корм,/catalog/tovary-i-korma-dlya-gryzunov/korm/
+4,10,Кормушки,/catalog/tovary-i-korma-dlya-gryzunov/kormushki/
+4,11,Купалки,/catalog/tovary-i-korma-dlya-gryzunov/kupalki/
+4,12,Лакомства,/catalog/tovary-i-korma-dlya-gryzunov/lakomstva_/
+4,13,Миски,/catalog/tovary-i-korma-dlya-gryzunov/miski/
+4,14,Наполнители,/catalog/tovary-i-korma-dlya-gryzunov/napolniteli/
+4,15,Переноски,/catalog/tovary-i-korma-dlya-gryzunov/perenoski/
+4,16,Подкормки,/catalog/tovary-i-korma-dlya-gryzunov/podkormki_/
+4,17,Поилки,/catalog/tovary-i-korma-dlya-gryzunov/poilki/
+4,18,Средства по уходу,/catalog/tovary-i-korma-dlya-gryzunov/sredstva-po-ukhodu/
+4,19,Туалет,/catalog/tovary-i-korma-dlya-gryzunov/tualet/
+4,20,Шлейки,/catalog/tovary-i-korma-dlya-gryzunov/shleyki/
+id_category,id_category_child,title,href
+6,1,Корм,/catalog/tovary-i-korma-dlya-reptiliy/korm/
+6,2,Средства по уходу,/catalog/tovary-i-korma-dlya-reptiliy/sredstva-po-ukhodu/
+6,3,Террариумы,/catalog/tovary-i-korma-dlya-reptiliy/terrariumy_/
+5,4,Корма разные,/catalog/tovary-i-korma-dlya-ryb/korma-raznye/
+5,5,Оборудование,/catalog/tovary-i-korma-dlya-ryb/oborudovanie/
+5,6,Уход за водой,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-vodoy/
+5,7,Уход за растениями,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rasteniyami/
+5,8,Уход за рыбами,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rybami/
+4,9,Корм,/catalog/tovary-i-korma-dlya-gryzunov/korm/
+4,10,Кормушки,/catalog/tovary-i-korma-dlya-gryzunov/kormushki/
+4,11,Купалки,/catalog/tovary-i-korma-dlya-gryzunov/kupalki/
+4,12,Лакомства,/catalog/tovary-i-korma-dlya-gryzunov/lakomstva_/
+4,13,Миски,/catalog/tovary-i-korma-dlya-gryzunov/miski/
+4,14,Наполнители,/catalog/tovary-i-korma-dlya-gryzunov/napolniteli/
+4,15,Переноски,/catalog/tovary-i-korma-dlya-gryzunov/perenoski/
+4,16,Подкормки,/catalog/tovary-i-korma-dlya-gryzunov/podkormki_/
+4,17,Поилки,/catalog/tovary-i-korma-dlya-gryzunov/poilki/
+4,18,Средства по уходу,/catalog/tovary-i-korma-dlya-gryzunov/sredstva-po-ukhodu/
+4,19,Туалет,/catalog/tovary-i-korma-dlya-gryzunov/tualet/
+4,20,Шлейки,/catalog/tovary-i-korma-dlya-gryzunov/shleyki/
+id_category,id_category_child,title,href
+7,1,Аксессуары,/catalog/tovary-i-korma-dlya-khorkov/aksessuary/
+7,2,Клетки,/catalog/tovary-i-korma-dlya-khorkov/kletki/
+7,3,Корм,/catalog/tovary-i-korma-dlya-khorkov/korm/
+7,4,Шампуни,/catalog/tovary-i-korma-dlya-khorkov/shampuni/
+5,5,Оборудование,/catalog/tovary-i-korma-dlya-ryb/oborudovanie/
+5,6,Уход за водой,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-vodoy/
+5,7,Уход за растениями,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rasteniyami/
+5,8,Уход за рыбами,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rybami/
+4,9,Корм,/catalog/tovary-i-korma-dlya-gryzunov/korm/
+4,10,Кормушки,/catalog/tovary-i-korma-dlya-gryzunov/kormushki/
+4,11,Купалки,/catalog/tovary-i-korma-dlya-gryzunov/kupalki/
+4,12,Лакомства,/catalog/tovary-i-korma-dlya-gryzunov/lakomstva_/
+4,13,Миски,/catalog/tovary-i-korma-dlya-gryzunov/miski/
+4,14,Наполнители,/catalog/tovary-i-korma-dlya-gryzunov/napolniteli/
+4,15,Переноски,/catalog/tovary-i-korma-dlya-gryzunov/perenoski/
+4,16,Подкормки,/catalog/tovary-i-korma-dlya-gryzunov/podkormki_/
+4,17,Поилки,/catalog/tovary-i-korma-dlya-gryzunov/poilki/
+4,18,Средства по уходу,/catalog/tovary-i-korma-dlya-gryzunov/sredstva-po-ukhodu/
+4,19,Туалет,/catalog/tovary-i-korma-dlya-gryzunov/tualet/
+4,20,Шлейки,/catalog/tovary-i-korma-dlya-gryzunov/shleyki/
+id_category,id_category_child,title,href
+1,1,Корм сухой,/catalog/tovary-i-korma-dlya-sobak/korm-sukhoy/
+1,2,Корм влажный,/catalog/tovary-i-korma-dlya-sobak/korm-vlazhnyy/
+1,3,Корм лечебный,/catalog/tovary-i-korma-dlya-sobak/korm-lechebnyy/
+1,4,Лакомства,/catalog/tovary-i-korma-dlya-sobak/lakomstva/
+1,5,Аксессуары,/catalog/tovary-i-korma-dlya-sobak/aksessuary/
+1,6,Витамины,/catalog/tovary-i-korma-dlya-sobak/vitaminy_/
+1,7,Игрушки,/catalog/tovary-i-korma-dlya-sobak/igrushki/
+1,8,Косточки,/catalog/tovary-i-korma-dlya-sobak/kostochki/
+1,9,Предметы гигиены,/catalog/tovary-i-korma-dlya-sobak/predmety-gigieny/
+1,10,Предметы по уходу,/catalog/tovary-i-korma-dlya-sobak/predmety-po-ukhodu/
+1,11,Средства от паразитов,/catalog/tovary-i-korma-dlya-sobak/sredstva-ot-parazitov/
+1,12,Средства по уходу,/catalog/tovary-i-korma-dlya-sobak/sredstva-po-ukhodu/
+id_category,id_category_child,title,href
+1,1,Корм сухой,/catalog/tovary-i-korma-dlya-sobak/korm-sukhoy/
+1,2,Корм влажный,/catalog/tovary-i-korma-dlya-sobak/korm-vlazhnyy/
+1,3,Корм лечебный,/catalog/tovary-i-korma-dlya-sobak/korm-lechebnyy/
+1,4,Лакомства,/catalog/tovary-i-korma-dlya-sobak/lakomstva/
+1,5,Аксессуары,/catalog/tovary-i-korma-dlya-sobak/aksessuary/
+1,6,Витамины,/catalog/tovary-i-korma-dlya-sobak/vitaminy_/
+1,7,Игрушки,/catalog/tovary-i-korma-dlya-sobak/igrushki/
+1,8,Косточки,/catalog/tovary-i-korma-dlya-sobak/kostochki/
+1,9,Предметы гигиены,/catalog/tovary-i-korma-dlya-sobak/predmety-gigieny/
+1,10,Предметы по уходу,/catalog/tovary-i-korma-dlya-sobak/predmety-po-ukhodu/
+1,11,Средства от паразитов,/catalog/tovary-i-korma-dlya-sobak/sredstva-ot-parazitov/
+1,12,Средства по уходу,/catalog/tovary-i-korma-dlya-sobak/sredstva-po-ukhodu/
+id_category,id_category_child,title,href
+1,1,Корм сухой,/catalog/tovary-i-korma-dlya-sobak/korm-sukhoy/
+1,2,Корм влажный,/catalog/tovary-i-korma-dlya-sobak/korm-vlazhnyy/
+1,3,Корм лечебный,/catalog/tovary-i-korma-dlya-sobak/korm-lechebnyy/
+1,4,Лакомства,/catalog/tovary-i-korma-dlya-sobak/lakomstva/
+1,5,Аксессуары,/catalog/tovary-i-korma-dlya-sobak/aksessuary/
+1,6,Витамины,/catalog/tovary-i-korma-dlya-sobak/vitaminy_/
+1,7,Игрушки,/catalog/tovary-i-korma-dlya-sobak/igrushki/
+1,8,Косточки,/catalog/tovary-i-korma-dlya-sobak/kostochki/
+1,9,Предметы гигиены,/catalog/tovary-i-korma-dlya-sobak/predmety-gigieny/
+1,10,Предметы по уходу,/catalog/tovary-i-korma-dlya-sobak/predmety-po-ukhodu/
+1,11,Средства от паразитов,/catalog/tovary-i-korma-dlya-sobak/sredstva-ot-parazitov/
+1,12,Средства по уходу,/catalog/tovary-i-korma-dlya-sobak/sredstva-po-ukhodu/
+id_category,id_category_child,title,href
+2,1,Корм сухой,/catalog/tovary-i-korma-dlya-koshek/korm-sukhoy/
+2,2,Корм влажный,/catalog/tovary-i-korma-dlya-koshek/korm-vlazhnyy/
+2,3,Корм лечебный,/catalog/tovary-i-korma-dlya-koshek/korm-lechebnyy/
+2,4,Наполнитель,/catalog/tovary-i-korma-dlya-koshek/napolnitel/
+2,5,Лакомства,/catalog/tovary-i-korma-dlya-koshek/lakomstva/
+2,6,Автокормушки,/catalog/tovary-i-korma-dlya-koshek/avtokormushki/
+2,7,Аксессуары,/catalog/tovary-i-korma-dlya-koshek/aksessuary/
+2,8,Витамины,/catalog/tovary-i-korma-dlya-koshek/vitaminy/
+2,9,Домики,/catalog/tovary-i-korma-dlya-koshek/domiki/
+2,10,Игрушки,/catalog/tovary-i-korma-dlya-koshek/igrushki/
+2,11,Когтеточки,/catalog/tovary-i-korma-dlya-koshek/kogtetochki/
+2,12,Лежанки,/catalog/tovary-i-korma-dlya-koshek/lezhanki/
+2,13,Миски,/catalog/tovary-i-korma-dlya-koshek/miski/
+2,14,Переноски,/catalog/tovary-i-korma-dlya-koshek/perenoski/
+2,15,Предметы по уходу,/catalog/tovary-i-korma-dlya-koshek/predmety-po-ukhodu/
+2,16,Средства от паразитов,/catalog/tovary-i-korma-dlya-koshek/sredstva-ot-parazitov/
+2,17,Средства по уходу,/catalog/tovary-i-korma-dlya-koshek/sredstva-po-ukhodu/
+2,18,Тонель,/catalog/tovary-i-korma-dlya-koshek/tonel/
+2,19,"Туалеты, совки",/catalog/tovary-i-korma-dlya-koshek/tualety-sovki/
+2,20,Шлейки,/catalog/tovary-i-korma-dlya-koshek/shleyki/
+id_category,id_category_child,title,href
+3,1,Подвески,/catalog/tovary-i-korma-dlya-ptits/podveski/
+3,2,Витамины,/catalog/tovary-i-korma-dlya-ptits/vitaminy/
+3,3,Гнездo,/catalog/tovary-i-korma-dlya-ptits/gnezdo/
+3,4,Жердочки,/catalog/tovary-i-korma-dlya-ptits/zherdochki/
+3,5,Зеркала,/catalog/tovary-i-korma-dlya-ptits/zerkala/
+3,6,Игрушки,/catalog/tovary-i-korma-dlya-ptits/igrushki/
+3,7,Качели,/catalog/tovary-i-korma-dlya-ptits/kacheli/
+3,8,Клетки,/catalog/tovary-i-korma-dlya-ptits/kletki/
+3,9,Корм,/catalog/tovary-i-korma-dlya-ptits/korm/
+3,10,Кормушки,/catalog/tovary-i-korma-dlya-ptits/kormushki/
+3,11,Купалки,/catalog/tovary-i-korma-dlya-ptits/kupalki/
+3,12,Лакомства,/catalog/tovary-i-korma-dlya-ptits/lakomstva/
+3,13,Лестницы,/catalog/tovary-i-korma-dlya-ptits/lestnitsy/
+3,14,Переноски,/catalog/tovary-i-korma-dlya-ptits/perenoski/
+3,15,"Песок,камни",/catalog/tovary-i-korma-dlya-ptits/pesok-kamni/
+3,16,Подкормки,/catalog/tovary-i-korma-dlya-ptits/podkormki/
+3,17,Поилки,/catalog/tovary-i-korma-dlya-ptits/poilki/
+2,18,Тонель,/catalog/tovary-i-korma-dlya-koshek/tonel/
+2,19,"Туалеты, совки",/catalog/tovary-i-korma-dlya-koshek/tualety-sovki/
+2,20,Шлейки,/catalog/tovary-i-korma-dlya-koshek/shleyki/
+id_category,id_category_child,title,href
+4,1,Витамины,/catalog/tovary-i-korma-dlya-gryzunov/vitaminy/
+4,2,Когтерез,/catalog/tovary-i-korma-dlya-gryzunov/kogterez/
+4,3,"Гамак,Тоннель",/catalog/tovary-i-korma-dlya-gryzunov/gamak-tonnel/
+4,4,Домики,/catalog/tovary-i-korma-dlya-gryzunov/domiki/
+4,5,Игрушки,/catalog/tovary-i-korma-dlya-gryzunov/igrushki/
+4,6,Расчестки,/catalog/tovary-i-korma-dlya-gryzunov/raschestki/
+4,7,Клетки,/catalog/tovary-i-korma-dlya-gryzunov/kletki/
+4,8,Колеса,/catalog/tovary-i-korma-dlya-gryzunov/kolesa/
+4,9,Корм,/catalog/tovary-i-korma-dlya-gryzunov/korm/
+4,10,Кормушки,/catalog/tovary-i-korma-dlya-gryzunov/kormushki/
+4,11,Купалки,/catalog/tovary-i-korma-dlya-gryzunov/kupalki/
+4,12,Лакомства,/catalog/tovary-i-korma-dlya-gryzunov/lakomstva_/
+4,13,Миски,/catalog/tovary-i-korma-dlya-gryzunov/miski/
+4,14,Наполнители,/catalog/tovary-i-korma-dlya-gryzunov/napolniteli/
+4,15,Переноски,/catalog/tovary-i-korma-dlya-gryzunov/perenoski/
+4,16,Подкормки,/catalog/tovary-i-korma-dlya-gryzunov/podkormki_/
+4,17,Поилки,/catalog/tovary-i-korma-dlya-gryzunov/poilki/
+4,18,Средства по уходу,/catalog/tovary-i-korma-dlya-gryzunov/sredstva-po-ukhodu/
+4,19,Туалет,/catalog/tovary-i-korma-dlya-gryzunov/tualet/
+4,20,Шлейки,/catalog/tovary-i-korma-dlya-gryzunov/shleyki/
+id_category,id_category_child,title,href
+5,1,Аксессуары,/catalog/tovary-i-korma-dlya-ryb/aksessuary/
+5,2,Корм Sera,/catalog/tovary-i-korma-dlya-ryb/korm-sera/
+5,3,Корм Tetra,/catalog/tovary-i-korma-dlya-ryb/korm-tetra/
+5,4,Корма разные,/catalog/tovary-i-korma-dlya-ryb/korma-raznye/
+5,5,Оборудование,/catalog/tovary-i-korma-dlya-ryb/oborudovanie/
+5,6,Уход за водой,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-vodoy/
+5,7,Уход за растениями,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rasteniyami/
+5,8,Уход за рыбами,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rybami/
+4,9,Корм,/catalog/tovary-i-korma-dlya-gryzunov/korm/
+4,10,Кормушки,/catalog/tovary-i-korma-dlya-gryzunov/kormushki/
+4,11,Купалки,/catalog/tovary-i-korma-dlya-gryzunov/kupalki/
+4,12,Лакомства,/catalog/tovary-i-korma-dlya-gryzunov/lakomstva_/
+4,13,Миски,/catalog/tovary-i-korma-dlya-gryzunov/miski/
+4,14,Наполнители,/catalog/tovary-i-korma-dlya-gryzunov/napolniteli/
+4,15,Переноски,/catalog/tovary-i-korma-dlya-gryzunov/perenoski/
+4,16,Подкормки,/catalog/tovary-i-korma-dlya-gryzunov/podkormki_/
+4,17,Поилки,/catalog/tovary-i-korma-dlya-gryzunov/poilki/
+4,18,Средства по уходу,/catalog/tovary-i-korma-dlya-gryzunov/sredstva-po-ukhodu/
+4,19,Туалет,/catalog/tovary-i-korma-dlya-gryzunov/tualet/
+4,20,Шлейки,/catalog/tovary-i-korma-dlya-gryzunov/shleyki/
+id_category,id_category_child,title,href
+6,1,Корм,/catalog/tovary-i-korma-dlya-reptiliy/korm/
+6,2,Средства по уходу,/catalog/tovary-i-korma-dlya-reptiliy/sredstva-po-ukhodu/
+6,3,Террариумы,/catalog/tovary-i-korma-dlya-reptiliy/terrariumy_/
+5,4,Корма разные,/catalog/tovary-i-korma-dlya-ryb/korma-raznye/
+5,5,Оборудование,/catalog/tovary-i-korma-dlya-ryb/oborudovanie/
+5,6,Уход за водой,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-vodoy/
+5,7,Уход за растениями,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rasteniyami/
+5,8,Уход за рыбами,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rybami/
+4,9,Корм,/catalog/tovary-i-korma-dlya-gryzunov/korm/
+4,10,Кормушки,/catalog/tovary-i-korma-dlya-gryzunov/kormushki/
+4,11,Купалки,/catalog/tovary-i-korma-dlya-gryzunov/kupalki/
+4,12,Лакомства,/catalog/tovary-i-korma-dlya-gryzunov/lakomstva_/
+4,13,Миски,/catalog/tovary-i-korma-dlya-gryzunov/miski/
+4,14,Наполнители,/catalog/tovary-i-korma-dlya-gryzunov/napolniteli/
+4,15,Переноски,/catalog/tovary-i-korma-dlya-gryzunov/perenoski/
+4,16,Подкормки,/catalog/tovary-i-korma-dlya-gryzunov/podkormki_/
+4,17,Поилки,/catalog/tovary-i-korma-dlya-gryzunov/poilki/
+4,18,Средства по уходу,/catalog/tovary-i-korma-dlya-gryzunov/sredstva-po-ukhodu/
+4,19,Туалет,/catalog/tovary-i-korma-dlya-gryzunov/tualet/
+4,20,Шлейки,/catalog/tovary-i-korma-dlya-gryzunov/shleyki/
+id_category,id_category_child,title,href
+7,1,Аксессуары,/catalog/tovary-i-korma-dlya-khorkov/aksessuary/
+7,2,Клетки,/catalog/tovary-i-korma-dlya-khorkov/kletki/
+7,3,Корм,/catalog/tovary-i-korma-dlya-khorkov/korm/
+7,4,Шампуни,/catalog/tovary-i-korma-dlya-khorkov/shampuni/
+5,5,Оборудование,/catalog/tovary-i-korma-dlya-ryb/oborudovanie/
+5,6,Уход за водой,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-vodoy/
+5,7,Уход за растениями,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rasteniyami/
+5,8,Уход за рыбами,/catalog/tovary-i-korma-dlya-ryb/ukhod-za-rybami/
+4,9,Корм,/catalog/tovary-i-korma-dlya-gryzunov/korm/
+4,10,Кормушки,/catalog/tovary-i-korma-dlya-gryzunov/kormushki/
+4,11,Купалки,/catalog/tovary-i-korma-dlya-gryzunov/kupalki/
+4,12,Лакомства,/catalog/tovary-i-korma-dlya-gryzunov/lakomstva_/
+4,13,Миски,/catalog/tovary-i-korma-dlya-gryzunov/miski/
+4,14,Наполнители,/catalog/tovary-i-korma-dlya-gryzunov/napolniteli/
+4,15,Переноски,/catalog/tovary-i-korma-dlya-gryzunov/perenoski/
+4,16,Подкормки,/catalog/tovary-i-korma-dlya-gryzunov/podkormki_/
+4,17,Поилки,/catalog/tovary-i-korma-dlya-gryzunov/poilki/
+4,18,Средства по уходу,/catalog/tovary-i-korma-dlya-gryzunov/sredstva-po-ukhodu/
+4,19,Туалет,/catalog/tovary-i-korma-dlya-gryzunov/tualet/
+4,20,Шлейки,/catalog/tovary-i-korma-dlya-gryzunov/shleyki/
+id_category,id_category_child,title,href
+1,1,Корм сухой,/catalog/tovary-i-korma-dlya-sobak/korm-sukhoy/
+1,2,Корм влажный,/catalog/tovary-i-korma-dlya-sobak/korm-vlazhnyy/
+1,3,Корм лечебный,/catalog/tovary-i-korma-dlya-sobak/korm-lechebnyy/
+1,4,Лакомства,/catalog/tovary-i-korma-dlya-sobak/lakomstva/
+1,5,Аксессуары,/catalog/tovary-i-korma-dlya-sobak/aksessuary/
+1,6,Витамины,/catalog/tovary-i-korma-dlya-sobak/vitaminy_/
+1,7,Игрушки,/catalog/tovary-i-korma-dlya-sobak/igrushki/
+1,8,Косточки,/catalog/tovary-i-korma-dlya-sobak/kostochki/
+1,9,Предметы гигиены,/catalog/tovary-i-korma-dlya-sobak/predmety-gigieny/
+1,10,Предметы по уходу,/catalog/tovary-i-korma-dlya-sobak/predmety-po-ukhodu/
+1,11,Средства от паразитов,/catalog/tovary-i-korma-dlya-sobak/sredstva-ot-parazitov/
+1,12,Средства по уходу,/catalog/tovary-i-korma-dlya-sobak/sredstva-po-ukhodu/
