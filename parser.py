@@ -60,8 +60,12 @@ def catalog_page(main_catalog: str):
     except Exception as err:
         logging.debug(f"Произошла ошибка: {err}")
     save_bs_title('categories.csv', ['id', 'title', 'href'])
-    save_bs_title('categories_child.csv', ['id_category', 'id_category_child', 'title', 'href'])
-    save_bs_title('products.csv', ['id_cat_child', 'title', 'price', 'article', 'shorts_code'])
+    save_bs_title(
+        'categories_child.csv',
+        ['id_category', 'id_category_child', 'title', 'href'])
+    save_bs_title(
+        'products.csv',
+        ['id_cat_child', 'title', 'price', 'article', 'shorts_code'])
     for items in soup_catalog.find_all("a", {"class": "item-depth-1"}):
         try:
             sub_category = requests.get(f"{DOMAIN}{items.get('href')}")
@@ -78,7 +82,6 @@ def catalog_page(main_catalog: str):
         get_sub_category(soup_sub_category, links_url,
                          items, id_parent_cat, category_child, count_child)
 
-    
     save_bs('categories.csv', category)
     endTime = time.time()
     elapsedTime = endTime - startTime
@@ -108,12 +111,10 @@ def get_sub_category(soup_sub_category, links_url, items,
             'title': items_sub_cat.get('title'),
             'href': items_sub_cat.get('href')
         }
-        
         time.sleep(0.5)
         products_page(soup_products, count_child)
         # paginate(soup_products)
     save_bs('categories_child.csv', category_child)
-    
 
 
 def products_page(soup_products, count_child):
@@ -131,13 +132,14 @@ def products_page(soup_products, count_child):
         text_title = soup_product.h1
         logging.debug(text_title.text)
         count_prod = 0
-        for val_product in soup_product.find(class_="b-catalog-element-offers-table").find_all('tr'):
+        for val_product in soup_product.find(
+                class_="b-catalog-element-offers-table").find_all('tr'):
             products_tds = val_product.find_all('b')
             if products_tds != []:
-               artic = products_tds[1]
-               shorts = products_tds[3]
-               pack = products_tds[5]
-            
+                artic = products_tds[1]
+                shorts = products_tds[3]
+                pack = products_tds[5]
+
             count_prod += 1
 
             category_product[count_prod] = {
