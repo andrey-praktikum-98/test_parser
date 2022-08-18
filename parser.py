@@ -24,6 +24,16 @@ with open('config.json', 'r') as f:
     config = json.load(f)
 
 
+def beatiful_req(url_name: str):
+    try:
+        catalog = requests.get(f"{DOMAIN}{url_name}")
+        soup_catalog = BeautifulSoup(catalog.text, 'html.parser')
+    except Exception as err:
+        logging.debug(f"Произошла ошибка: {err}")
+
+    return soup_catalog
+
+
 def save_bs_title(file_name: str, title: list):
     with open(file_name, mode='w', encoding='utf-8') as file:
         employee_writer = csv.writer(
@@ -54,11 +64,7 @@ def catalog_page(main_catalog: str):
     category_child = {}
     id_parent_cat = 0
     count_child = 0
-    try:
-        catalog = requests.get(f"{DOMAIN}{main_catalog}")
-        soup_catalog = BeautifulSoup(catalog.text, 'html.parser')
-    except Exception as err:
-        logging.debug(f"Произошла ошибка: {err}")
+    soup_catalog = beatiful_req(main_catalog)
     save_bs_title('categories.csv', ['id', 'title', 'href'])
     save_bs_title(
         'categories_child.csv',
@@ -67,11 +73,7 @@ def catalog_page(main_catalog: str):
         'products.csv',
         ['id_cat_child', 'title', 'price', 'article', 'shorts_code'])
     for items in soup_catalog.find_all("a", {"class": "item-depth-1"}):
-        try:
-            sub_category = requests.get(f"{DOMAIN}{items.get('href')}")
-            soup_sub_category = BeautifulSoup(sub_category.text, 'html.parser')
-        except Exception as err:
-            logging.debug(f"Произошла ошибка: {err}")
+        soup_sub_category = beatiful_req(items.get('href'))
         links_url[items.get('title')] = {}
         id_parent_cat += 1
         category[id_parent_cat] = {
@@ -99,11 +101,7 @@ def get_sub_category(soup_sub_category, links_url, items,
             "a", {"class": "item-depth-1"})):
         links_url[items.get('title')][items_sub_cat.get('title')] = \
             items_sub_cat.get('href')
-        try:
-            products = requests.get(f"{DOMAIN}{items_sub_cat.get('href')}")
-            soup_products = BeautifulSoup(products.text, 'html.parser')
-        except Exception as err:
-            logging.debug(f"Произошла ошибка: {err}")
+        soup_products = beatiful_req(items_sub_cat.get('href'))
         count_child += 1
         category_child[count_child] = {
             'id_cat': id_parent_cat,
@@ -123,22 +121,21 @@ def products_page(soup_products, count_child):
     category_product = {}
     products_lop = soup_products.select(".catalog-content-info .name")
     for key, link_product in enumerate(products_lop):
-        try:
-            product_single = requests.get(
-                f"{DOMAIN}{link_product.get('href')}")
-            soup_product = BeautifulSoup(product_single.text, 'html.parser')
-        except Exception as err:
-            logging.debug(f"Произошла ошибка: {err}")
+
+        soup_product = beatiful_req(link_product.get('href'))
         text_title = soup_product.h1
         logging.debug(text_title.text)
         count_prod = 0
         for val_product in soup_product.find(
                 class_="b-catalog-element-offers-table").find_all('tr'):
             products_tds = val_product.find_all('b')
-            if products_tds != []:
-                artic = products_tds[1]
-                shorts = products_tds[3]
-                pack = products_tds[5]
+            try:
+                if products_tds != []:
+                    artic = products_tds[1]
+                    shorts = products_tds[3]
+                    pack = products_tds[5]
+            except ValueError as err_val:
+                logging.debug(f"Ошибка значения: {err_val}")
 
             count_prod += 1
 
@@ -160,8 +157,7 @@ def paginate(soup_products):
     products_paginate = soup_products.select(".navigation a")
     for prod_paginate in products_paginate:
         logging.debug(prod_paginate.get('href'))
-        product_single = requests.get(f"{DOMAIN}{prod_paginate.get('href')}")
-        soup_product = BeautifulSoup(product_single.text, 'html.parser')
+        soup_product = beatiful_req(prod_paginate.get('href'))
         logging.info(soup_product.select("td"))
 
         time.sleep(0.5)
