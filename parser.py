@@ -2,12 +2,12 @@
 # -*- coding: latin-1 -*-
 import os
 import time
-import csv
 import json
 import requests
 import logging
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+from parser_base_save import save_bs_title, save_bs
 
 load_dotenv()
 
@@ -29,34 +29,15 @@ def beatiful_req(url_name: str):
         catalog = requests.get(f"{DOMAIN}{url_name}")
         soup_catalog = BeautifulSoup(catalog.text, 'html.parser')
     except Exception as err:
-        logging.debug(f"Ïðîèçîøëà îøèáêà: {err}")
+        logging.debug(f"ÐŸÑ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð¾ÑˆÐ¸Ð±ÐºÐ°: {err}")
 
     return soup_catalog
 
 
-def save_bs_title(file_name: str, title: list):
-    with open(file_name, mode='w', encoding='utf-8') as file:
-        employee_writer = csv.writer(
-            file, delimiter=',',
-            quotechar='"', quoting=csv.QUOTE_MINIMAL)
-
-        employee_writer.writerow(title)
-
-
-def save_bs(file_name: str, content: dict):
-    with open(file_name, mode='a') as employee_file:
-        employee_writer = csv.writer(
-            employee_file, delimiter=',',
-            quotechar='"', quoting=csv.QUOTE_MINIMAL)
-
-        for val in content.values():
-            logging.debug(val)
-            employee_writer.writerow(val.values())
-
-
 def catalog_page(main_catalog: str):
     """
-    Ãëàâíàÿ ôóíêöèÿ è îòðàáîòêà êàòåãîðèè ñ ñîõðàíåíèåì â áàçó
+    ÐžÑ‚Ñ€Ð°Ð±Ð°Ñ‚Ñ‹Ð²Ð°ÐµÑ‚ Ð½Ð° Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ
+    Ñ€Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ð¹ ÐºÐ°Ñ‚Ð°Ð»Ð¾Ð³
     """
     startTime = time.time()
     links_url = {}
@@ -88,14 +69,17 @@ def catalog_page(main_catalog: str):
     endTime = time.time()
     elapsedTime = endTime - startTime
     logging.info(
-        f"Çàòðà÷åíîå âðåìÿ íà çàïðîñû: {elapsedTime}")
+        f"Ð’Ñ€ÐµÐ¼Ñ Ð¾Ð¶Ð¸Ð´Ð°Ð½Ð¸Ðµ Ð¿Ð°Ñ€ÑÐµÑ€Ð°: {elapsedTime}")
     return links_url
 
 
-def get_sub_category(soup_sub_category, links_url, items,
-                     id_parent_cat, category_child, count_child):
-    """Ïîëó÷åíèå ïîäêàòåãîðèé è ñîõðàíåíèå â áàçó"""
-
+def get_sub_category(soup_sub_category: BeautifulSoup, links_url: dict,
+                     items: BeautifulSoup, id_parent_cat: int,
+                     category_child: dict, count_child: int):
+    """
+    ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ðµ Ð¿Ð¾ Ñ€Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ð¼ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸ÑÐ¼,
+    Ð¿Ð¾Ð´ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸
+    """
     category_child = {}
     for items_sub_cat in (soup_sub_category.find_all(
             "a", {"class": "item-depth-1"})):
@@ -115,16 +99,15 @@ def get_sub_category(soup_sub_category, links_url, items,
     save_bs('categories_child.csv', category_child)
 
 
-def products_page(soup_products, count_child):
-    """Ïîëó÷åíèå ïðîäóêòîâ"""
-
+def products_page(soup_products: BeautifulSoup, count_child: int):
+    """
+    ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð² ÐºÐ°Ð¶Ð´Ð¾Ð¹ Ð¿Ð¾Ð´ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸
+    """
     category_product = {}
     products_lop = soup_products.select(".catalog-content-info .name")
     for key, link_product in enumerate(products_lop):
-
         soup_product = beatiful_req(link_product.get('href'))
         text_title = soup_product.h1
-        logging.debug(text_title.text)
         count_prod = 0
         for val_product in soup_product.find(
                 class_="b-catalog-element-offers-table").find_all('tr'):
@@ -135,10 +118,9 @@ def products_page(soup_products, count_child):
                     shorts = products_tds[3]
                     pack = products_tds[5]
             except ValueError as err_val:
-                logging.debug(f"Îøèáêà çíà÷åíèÿ: {err_val}")
+                logging.debug(f"ÐžÑˆÐ¸Ð±ÐºÐ° Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ: {err_val}")
 
             count_prod += 1
-
             category_product[count_prod] = {
                 'id_cat_child': count_child,
                 'text_title': text_title.text,
@@ -148,18 +130,18 @@ def products_page(soup_products, count_child):
             }
 
         time.sleep(0.5)
-
     save_bs('products.csv', category_product)
 
 
 def paginate(soup_products):
-    """Ïàëó÷åíèÿ ññûëîê íà ïàãèíàöèè è îáðàáîòêà êàæäîé ñòðàíèöû"""
+    """
+    ÐžÑ‚Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° Ð¿Ð°Ð³Ð¸Ð½Ð°Ñ†Ð¸Ð¸ Ð¸ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²
+    """
     products_paginate = soup_products.select(".navigation a")
     for prod_paginate in products_paginate:
         logging.debug(prod_paginate.get('href'))
         soup_product = beatiful_req(prod_paginate.get('href'))
         logging.info(soup_product.select("td"))
-
         time.sleep(0.5)
 
 
